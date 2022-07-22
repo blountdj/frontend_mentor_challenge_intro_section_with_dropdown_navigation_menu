@@ -1,0 +1,134 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  margin-left: clamp(32px, calc(2rem + ((1vw - 8px) * 17.5)), 144px);
+  margin-right: clamp(32px, calc(2rem + ((1vw - 8px) * 17.5)), 144px);
+
+  margin-top: 6rem;
+  gap: clamp(25px, calc(1.5625rem + ((1vw - 8px) * 3.9063)), 50px);
+  height: clamp(500px, calc(31.25rem + ((1vw - 8px) * 93.75)), 1100px);
+  //   overflow: hidden;
+
+  margin-bottom: 5rem;
+
+  &__details {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(25px, calc(1.5625rem + ((1vw - 8px) * 4.2188)), 52px);
+
+    &__h1 {
+      font-size: clamp(50px, calc(3.125rem + ((1vw - 8px) * 6.25)), 90px);
+      font-weight: 700;
+      color: $color-almost-black;
+      padding-right: clamp(20px, calc(1.25rem + ((1vw - 8px) * 12.5)), 100px);
+      padding-top: clamp(10px, calc(0.625rem + ((1vw - 8px) * 17.1875)), 120px);
+    }
+
+    &__p {
+      line-height: 1.5;
+      padding-right: clamp(
+        65px,
+        calc(4.0625rem + ((1vw - 8px) * 5.4688)),
+        100px
+      );
+    }
+
+    &__btn {
+      color: $color-almost-wite;
+      background-color: $color-almost-black;
+      border: 1px solid $color-almost-black;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 10rem; // 1440
+
+      width: 17rem;
+
+      &:hover {
+        background-color: $color-almost-wite;
+        color: $color-almost-black;
+      }
+    }
+
+    &__clients {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-right: 5rem;
+      gap: clamp(20px, calc(1.25rem + ((1vw - 8px) * 4.6875)), 50px);
+      height: clamp(20px, calc(1.25rem + ((1vw - 8px) * 2.5)), 36px);
+    }
+  }
+
+  &__img {
+    display: flex;
+    background-image: url("../images/image-hero-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%; //
+    width: 600px;
+    height: 80rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    gap: 3rem;
+    height: 80rem;
+
+    &__img {
+      background-image: url("../images/image-hero-mobile.png");
+      background-size: contain;
+      background-position-x: center;
+      height: clamp(300px, calc(18.75rem + ((1vw - 3.75px) * 23.5294)), 400px);
+      width: 100%;
+      z-index: 0;
+    }
+
+    &__details {
+      align-items: center;
+      text-align: center;
+      gap: 2.5rem;
+      width: 100%;
+
+      &__h1 {
+        font-size: 3.5rem;
+        padding-right: 0rem;
+        padding-top: 2rem;
+      }
+
+      &__p {
+        line-height: 1.2;
+        font-size: 1.6rem;
+        padding-right: 0;
+        width: 90%;
+      }
+
+      &__btn {
+        margin-right: 0rem;
+        margin-bottom: 4rem;
+        padding: 1.2rem 1.8rem 1.2rem 1.8rem;
+      }
+
+      &__clients {
+        width: 100%;
+        margin-right: 0rem;
+        margin-bottom: 4rem;
+        gap: clamp(30px, calc(1.875rem + ((1vw - 3.75px) * 3.8095)), 50px);
+
+        height: 1.6rem;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main class="main">
+      <nav class="nav">
+        <img src="images/logo.svg" alt="logo" class="nav__logo" />
+        <div class="nav__container">
+          <!-- <img
+            src="images/icon-close-menu.svg"
+            alt="close menu icon"
+            class="nav__close"
+          /> -->
+          <menu class="nav__menu">
+            <a href="#" class="nav__menu__item nav__menu__item--features">
+              <p class="nav__menu__item__text">
+                Features
+                <svg
+                  class="nav__menu__item__arrow"
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </p>
+              <div class="nav__menu__item__submenu submenu">
+                <img
+                  src="images/icon-todo.svg"
+                  alt="todo icon"
+                  class="nav__menu__item__submenu__icon"
+                />
+                <p class="nav__menu__item__submenu__text">Todo List</p>
+                <img
+                  src="images/icon-calendar.svg"
+                  alt="calendar icon"
+                  class="nav__menu__item__submenu__icon"
+                />
+                <p class="nav__menu__item__submenu__text">Calendar</p>
+                <img
+                  src="images/icon-reminders.svg"
+                  alt="reminders icon"
+                  class="nav__menu__item__submenu__icon"
+                />
+                <p class="nav__menu__item__submenu__text">Reminders</p>
+                <img
+                  src="images/icon-planning.svg"
+                  alt="planning icon"
+                  class="nav__menu__item__submenu__icon"
+                />
+                <p class="nav__menu__item__submenu__text">Planning</p>
+              </div>
+            </a>
+            <a href="#" class="nav__menu__item nav__menu__item--company">
+              <p class="nav__menu__item__text">
+                Company
+                <svg
+                  class="nav__menu__item__arrow"
+                  width="10"
+                  height="6"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke="#686868"
+                    stroke-width="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </p>
+              <div class="nav__menu__item__submenu submenu">
+                <p class="nav__menu__item__submenu__text">History</p>
+                <p class="nav__menu__item__submenu__text">Our Team</p>
+                <p class="nav__menu__item__submenu__text">Blog</p>
+              </div>
+            </a>
+            <a href="#" class="nav__menu__item nav__menu__item--careers"
+              >Careers</a
+            >
+            <a href="#" class="nav__menu__item">
+              <p class="nav__menu__item__text">About</p>
+            </a>
+          </menu>
+          <div class="nav__access">
+            <a href="#" class="nav__access__item">Login</a>
+            <a href="#" class="nav__access__item--register">Register</a>
+          </div>
+        </div>
+        <div class="nav__icon">
+          <div class="nav__icon__wrapper"></div>
+          <p class="nav__icon__line nav__icon__line--1 noAnimation"></p>
+          <p class="nav__icon__line nav__icon__line--2 noAnimation"></p>
+          <p class="nav__icon__line nav__icon__line--3 noAnimation"></p>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero__details">
+          <h1 class="hero__details__h1">Make remote work</h1>
+          <p class="hero__details__p">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="hero__details__btn">Learn more</button>
+          <div class="hero__details__clients">
+            <img
+              src="images/client-databiz.svg"
+              alt="databiz logo"
+              class="hero__clients__logo"
+            />
+            <img
+              src="images/client-audiophile.svg"
+              alt="audiophile logo"
+              class="hero__clients__logo"
+            />
+            <img
+              src="images/client-meet.svg"
+              alt="meet logo"
+              class="hero__clients__logo"
+            />
+            <img
+              src="images/client-maker.svg"
+              alt="maker logo"
+              class="hero__clients__logo"
+            />
+          </div>
+        </div>
+        <div class="hero__img"></div>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Darren Blount</a>.
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
